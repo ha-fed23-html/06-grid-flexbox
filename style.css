@@ -8,6 +8,9 @@
 .row {
 	flex-direction: row;  /* standardvärdet är row */
 }
+.column {
+	flex-direction: column;  /* standardvärdet är row */
+}
 
 nav, main, aside {
 	border: 1px solid black;
@@ -19,4 +22,19 @@ main {
 }
 nav, aside {
 	flex: 1 0 0em;
+}
+nav { background-color: rgb(177, 237, 177); }
+main { background-color: rgb(242, 181, 242); }
+aside { background-color: rgb(172, 232, 240); }
+
+header, footer {
+	border: 1px solid black;
+	padding: 1em;
+}
+body > .flex-container {
+	flex-grow: 1;
+}
+body {
+	min-height: 100vh;
+	margin: 0;
 }

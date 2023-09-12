@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 8em 1fr;
+	grid-template-rows: auto 1fr auto;
+}
+header, footer {
+	grid-column: span 3;
+}
+
+
+
+
+nav, main, aside {
+	border: 1px solid black;
+	padding: 1em;
+}
+
+
+nav {
+	background-color: rgb(177, 237, 177);
+}
+
+main {
+	background-color: rgb(242, 181, 242);
+}
+
+aside {
+	background-color: rgb(172, 232, 240);
+}
+
+header, footer {
+	border: 1px solid black;
+	padding: 1em;
+}
+
+
+body {
+	min-height: 100vh;
+	margin: 0;
+}

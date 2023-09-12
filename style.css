@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+}
+.flex-container {
+	display: flex;
+}
+
+.row {
+	flex-direction: row;  /* standardvärdet är row */
+}
+
+nav, main, aside {
+	border: 1px solid black;
+	padding: 1em;
+}
+main {
+	/* flex är shorthand för: flex-grow flex-shrink flex-basis */
+	flex: 0 0 8em;
+}
+nav, aside {
+	flex: 1 0 0em;
+}
